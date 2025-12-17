@@ -3,6 +3,6 @@ from pathlib import Path
 
 st.set_page_config(page_title="Student Task Dashboard", layout="wide")
 
-html_path = Path(__file__).parent / "hello.html"
-html_file = html_path.read_text(encoding="utf-8")
+html_path = path("index.html").read_text(encoding='utf-8')
 st.components.v1.html(html_file, height=800, scrolling=True)
+
